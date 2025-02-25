@@ -23,7 +23,7 @@ export type AuthLayoutProps = {
   };
 };
 
-export function AuthLayout({ sx, children, header }: AuthLayoutProps) {
+export default function AuthLayout({ sx, children, header }: AuthLayoutProps) {
   const layoutQuery: Breakpoint = 'md';
 
   return (

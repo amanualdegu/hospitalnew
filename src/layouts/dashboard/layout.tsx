@@ -8,7 +8,7 @@ import { useTheme } from '@mui/material/styles';
 
 import { _langs, _notifications } from 'src/_mock';
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'src/components/iconify/iconify';
 
 import { Main } from './main';
 import { layoutClasses } from '../classes';
@@ -33,7 +33,7 @@ export type DashboardLayoutProps = {
   };
 };
 
-export function DashboardLayout({ sx, children, header }: DashboardLayoutProps) {
+export default function DashboardLayout({ sx, children, header }: DashboardLayoutProps) {
   const theme = useTheme();
 
   const [navOpen, setNavOpen] = useState(false);
